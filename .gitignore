@@ -1,13 +1,17 @@
 # Dependencies
 node_modules
+app/node_modules
 
 # Build
 dist
+app/dist
 dist-ssr
 *.local
 
 # Logs
 logs
+data/logs/*
+!data/logs/.gitkeep
 *.log
 npm-debug.log*
 

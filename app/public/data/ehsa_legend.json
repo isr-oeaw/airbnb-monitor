@@ -1,0 +1,67 @@
+{
+  "persistent_hotspot": {
+    "color": "#67001f",
+    "label": "Persistenter Hotspot",
+    "description": "Signifikant in ≥90% der Zeitpunkte; verfestigte STR-Konzentration."
+  },
+  "consecutive_hotspot": {
+    "color": "#d6604d",
+    "label": "Aufeinanderfolgender Hotspot",
+    "description": "Signifikant in den jüngsten aufeinanderfolgenden Zeitpunkten; aktive Konsolidierung."
+  },
+  "intensifying_hotspot": {
+    "color": "#f4a582",
+    "label": "Intensivierender Hotspot",
+    "description": "Signifikant mit steigendem Mann-Kendall-Trend der Gi*-z-Werte."
+  },
+  "new_hotspot": {
+    "color": "#fddbc7",
+    "label": "Neuer Hotspot",
+    "description": "Nur im aktuellsten Zeitraum signifikant."
+  },
+  "sporadic_hotspot": {
+    "color": "#f7f7f7",
+    "label": "Sporadischer Hotspot",
+    "description": "Mehrfach signifikant, aber nicht durchgehend."
+  },
+  "historical_hotspot": {
+    "color": "#d1e5f0",
+    "label": "Historischer Hotspot",
+    "description": "Früher signifikant, zuletzt nicht mehr."
+  },
+  "persistent_coldspot": {
+    "color": "#053061",
+    "label": "Persistenter Coldspot",
+    "description": "Signifikant niedrige STR-Dichte in ≥90% der Zeitpunkte."
+  },
+  "consecutive_coldspot": {
+    "color": "#4393c3",
+    "label": "Aufeinanderfolgender Coldspot",
+    "description": "Signifikant niedrige Dichte in den jüngsten aufeinanderfolgenden Zeitpunkten."
+  },
+  "intensifying_coldspot": {
+    "color": "#92c5de",
+    "label": "Intensivierender Coldspot",
+    "description": "Signifikant niedrige Dichte mit abnehmendem Gi*-Trend."
+  },
+  "new_coldspot": {
+    "color": "#d1e5f0",
+    "label": "Neuer Coldspot",
+    "description": "Nur im aktuellsten Zeitraum signifikant niedrige Dichte."
+  },
+  "sporadic_coldspot": {
+    "color": "#e0ecf4",
+    "label": "Sporadischer Coldspot",
+    "description": "Mehrfach signifikant niedrige Dichte, aber nicht durchgehend."
+  },
+  "historical_coldspot": {
+    "color": "#f7f7f7",
+    "label": "Historischer Coldspot",
+    "description": "Früher signifikant niedrige Dichte, zuletzt nicht mehr."
+  },
+  "no_pattern": {
+    "color": "#dddddd",
+    "label": "Kein Muster",
+    "description": "Kein signifikanter Hot- oder Coldspot über die Zeitreihe."
+  }
+}

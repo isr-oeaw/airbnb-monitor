@@ -1,0 +1,155 @@
+{
+  "1": {
+    "name": "Burgenland",
+    "regulationSummary": "Im Burgenland gelten landesgesetzliche Bestimmungen zur Zweckentfremdung von Wohnraum. Kurzzeitvermietungen können meldepflichtig sein und unterliegen kommunaler sowie landesrechtlicher Kontrolle.",
+    "keyRules": [
+      "Meldepflicht für gewerbliche Beherbergung je nach Gemeinde",
+      "Landesgesetzliche Zweckentfremdungssperre kann greifen",
+      "Gemeindliche Auflagen und Nutzungsplanung beachten"
+    ],
+    "airbnbImpact": "In touristisch geprägten Regionen (Neusiedler See) steigt der Druck auf Wohnraum. Kurzzeitvermietung kann die Verfügbarkeit von Dauerwohnraum reduzieren.",
+    "sources": [
+      {
+        "label": "Land Burgenland – Wohnungswesen",
+        "url": "https://www.burgenland.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  },
+  "2": {
+    "name": "Kärnten",
+    "regulationSummary": "Kärnten regelt touristische Beherbergung und Zweckentfremdung auf Landesebene. In Ballungs- und Tourismusgebieten gelten verschärfte Melde- und Genehmigungspflichten.",
+    "keyRules": [
+      "Anmeldepflicht für gewerbliche Beherbergung",
+      "Zweckentfremdungsverbot für Wohnungen in bestimmten Gebieten",
+      "Bau- und nutzungsrechtliche Prüfung erforderlich"
+    ],
+    "airbnbImpact": "Tourismusregionen wie Wörthersee und Nassfeld sind besonders betroffen. Ferienwohnungen konkurrieren mit dem regulären Mietmarkt.",
+    "sources": [
+      {
+        "label": "Land Kärnten",
+        "url": "https://www.ktn.gv.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  },
+  "3": {
+    "name": "Niederösterreich",
+    "regulationSummary": "Niederösterreich kennt Regelungen zur Zweckentfremdung von Wohnraum und kommunale Beherbergungsauflagen. Nahe Wien verstärken sich Wohnraum- und Tourismuskonflikte.",
+    "keyRules": [
+      "Landesgesetzliche Zweckentfremdungsbestimmungen",
+      "Gemeindliche Meldepflichten für Beherbergung",
+      "Nutzungsänderungen können genehmigungspflichtig sein"
+    ],
+    "airbnbImpact": "Pendlerregionen und Weinviertel verzeichnen steigende Kurzzeitvermietungen. Dies kann Mietpreise in Umlandgemeinden beeinflussen.",
+    "sources": [
+      {
+        "label": "Land Niederösterreich",
+        "url": "https://www.noe.gv.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  },
+  "4": {
+    "name": "Oberösterreich",
+    "regulationSummary": "Oberösterreich regelt touristische Nutzung und Zweckentfremdung landesgesetzlich. Städte wie Linz und Tourismusorte haben ergänzende kommunale Vorschriften.",
+    "keyRules": [
+      "Meldepflicht für gewerbliche Kurzzeitvermietung",
+      "Zweckentfremdungssperre in definierten Gebieten",
+      "Brandschutz- und hygienerechtliche Anforderungen"
+    ],
+    "airbnbImpact": "Linz und Salzkammergut-Regionen zeigen hohe Plattform-Aktivität. Wohnraum in Innenstadtlagen ist besonders betroffen.",
+    "sources": [
+      {
+        "label": "Land Oberösterreich",
+        "url": "https://www.land-oberoesterreich.gv.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  },
+  "5": {
+    "name": "Salzburg",
+    "regulationSummary": "Salzburg hat als Tourismusland strenge Regeln für Beherbergung und Zweckentfremdung. Kurzzeitvermietung ohne Genehmigung kann in vielen Gemeinden unzulässig sein.",
+    "keyRules": [
+      "Landesgesetzliche Beherbergungs- und Zweckentfremdungsregelungen",
+      "Strenge gemeindliche Auflagen in Tourismusorten",
+      "Meldepflicht und mögliche Genehmigungspflicht"
+    ],
+    "airbnbImpact": "Stadt Salzburg und Skigebiete haben hohe Kurzzeitvermietungsdichte. Wohnraumknappheit für Einheimische ist ein wiederkehrendes Thema.",
+    "sources": [
+      {
+        "label": "Land Salzburg",
+        "url": "https://www.salzburg.gv.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  },
+  "6": {
+    "name": "Steiermark",
+    "regulationSummary": "Die Steiermark regelt Zweckentfremdung und touristische Beherbergung landesgesetzlich. Graz und Tourismusregionen haben unterschiedliche Schwerpunkte bei der Durchsetzung.",
+    "keyRules": [
+      "Landesgesetzliche Zweckentfremdungsbestimmungen",
+      "Gemeindliche Melde- und Genehmigungspflichten",
+      "Nutzungsplanung und Bauordnung beachten"
+    ],
+    "airbnbImpact": "Graz und Südsteiermark verzeichnen wachsende Plattform-Nutzung. Studentisches und urbanes Wohnen kann durch Kurzzeitvermietung unter Druck geraten.",
+    "sources": [
+      {
+        "label": "Land Steiermark",
+        "url": "https://www.steiermark.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  },
+  "7": {
+    "name": "Tirol",
+    "regulationSummary": "Tirol hat als führendes Tourismusland detaillierte Regelungen für Beherbergung und Zweckentfremdung. Kurzzeitvermietung ist in vielen Gemeinden stark reguliert.",
+    "keyRules": [
+      "Tiroler Zweckentfremdungsgesetz",
+      "Meldepflicht und Genehmigung für touristische Vermietung",
+      "Kommunale Sonderbestimmungen in Skigebieten"
+    ],
+    "airbnbImpact": "Skiregionen und Innsbruck haben sehr hohe Airbnb-Dichte. Wohnraum für Saisonarbeiter und Einheimische ist knapp.",
+    "sources": [
+      {
+        "label": "Land Tirol",
+        "url": "https://www.tirol.gv.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  },
+  "8": {
+    "name": "Vorarlberg",
+    "regulationSummary": "Vorarlberg regelt touristische Nutzung und Zweckentfremdung landesgesetzlich. Grenznähe und Alpen-Tourismus prägen die lokalen Auflagen.",
+    "keyRules": [
+      "Landesgesetzliche Zweckentfremdungsregelungen",
+      "Meldepflicht für gewerbliche Beherbergung",
+      "Gemeindliche Nutzungs- und Bauvorschriften"
+    ],
+    "airbnbImpact": "Bregenzerwald und Bodensee-Region haben signifikante Kurzzeitvermietung. Wohnraum in beliebten Tälern ist begrenzt.",
+    "sources": [
+      {
+        "label": "Land Vorarlberg",
+        "url": "https://www.vorarlberg.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  },
+  "9": {
+    "name": "Wien",
+    "regulationSummary": "Wien hat eines der strengsten Regime in Österreich: Zweckentfremdungsverbot, Meldepflicht für gewerbliche Beherbergung und kommunale Kontrolle. Kurzzeitvermietung ist stark reguliert.",
+    "keyRules": [
+      "Wiener Wohnungsrechtsgesetz – Zweckentfremdung",
+      "Meldepflicht für gewerbliche Beherbergung (MA 36)",
+      "Max. 90 Tage/Jahr für bestimmte Vermietungsformen möglich"
+    ],
+    "airbnbImpact": "Wien hat die höchste Airbnb-Dichte Österreichs. Kurzzeitvermietung entzieht dem regulären Mietmarkt Wohnungen und treibt Mietpreise in zentralen Bezirken.",
+    "sources": [
+      {
+        "label": "Stadt Wien – Wohnungsrecht",
+        "url": "https://www.wien.gv.at/"
+      }
+    ],
+    "lastUpdated": "2026-01"
+  }
+}

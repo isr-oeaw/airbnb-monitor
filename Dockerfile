@@ -3,18 +3,22 @@ FROM node:22-alpine AS build
 
 WORKDIR /app
 
-COPY package.json package-lock.json* ./
+COPY app/package.json app/package-lock.json* ./
 RUN npm install
 
-COPY . .
+COPY app/ .
 RUN npm run build
 
 # Runtime stage
 FROM nginx:alpine
 
+RUN apk add --no-cache apache2-utils
+
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY nginx/docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 COPY --from=build /app/dist /usr/share/nginx/html
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["/docker-entrypoint.sh"]

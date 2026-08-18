@@ -1,6 +1,41 @@
 services:
-  web:
+  app:
     build: .
     ports:
       - "8080:80"
-    restart: unless-stopped
+    environment:
+      - AUTH_ENABLED=false
+      - AUTH_USER=airbnb
+      - AUTH_PASSWORD=changeme
+    depends_on:
+      - logger
+
+  logger:
+    image: node:22-alpine
+    working_dir: /server
+    command: node search-log.mjs
+    volumes:
+      - ./server:/server:ro
+      - ./data/logs:/data
+    environment:
+      - LOG_FILE=/data/address-searches.jsonl
+    ports:
+      - "3001:3001"
+
+  dev:
+    image: node:22-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --host"
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./app:/app
+      - node_modules:/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - LOG_API_ORIGIN=http://logger:3001
+    depends_on:
+      - logger
+
+volumes:
+  node_modules:

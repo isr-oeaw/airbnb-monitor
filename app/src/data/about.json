@@ -1,0 +1,25 @@
+{
+  "title": "Airbnb Monitor",
+  "intro": [
+    "Diese interaktive Karte informiert über Airbnb-Regulierung in Österreich und den EHSA-Impact-Index für Wien.",
+    "Nutzen Sie die Adresssuche, um eine österreichische Adresse zu finden, oder klicken Sie auf ein Bundesland für Zusammenfassungen der lokalen Regeln."
+  ],
+  "sections": [
+    {
+      "heading": "Regulierung",
+      "body": [
+        "Im Modus Regulierung sehen Sie die neun österreichischen Bundesländer. Klicken Sie auf ein Bundesland oder suchen Sie eine Adresse, um Informationen zu Meldepflichten, Genehmigungen und weiteren Regeln zu erhalten."
+      ]
+    },
+    {
+      "heading": "Impact Index",
+      "body": [
+        "Im Modus Impact Index wird eine Karte der Wiener H3-Zellen mit EHSA-Klassifikationen angezeigt. Suchen Sie eine Wiener Adresse, um den zugehörigen Hotspot- oder Coldspot-Typ und die Legende einzusehen. Details zu Daten und Methodik finden Sie unter „Methodik“ in der Kopfzeile."
+      ]
+    }
+  ],
+  "consentLabel": "Ich stimme der freiwilligen Speicherung meiner ausgewählten Adressen auf dem Server zu.",
+  "consentHint": "Optional. Ohne Zustimmung können Sie die Karte uneingeschränkt nutzen.",
+  "privacyLinkLabel": "Datenschutzerklärung",
+  "closeLabel": "Weiter zur Karte"
+}

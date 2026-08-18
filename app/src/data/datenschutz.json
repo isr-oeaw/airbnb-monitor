@@ -1,0 +1,42 @@
+{
+  "title": "Datenschutzerklärung",
+  "sections": [
+    {
+      "heading": "Verantwortlicher",
+      "body": [
+        "Institut für Stadt- und Regionalforschung",
+        "Österreichische Akademie der Wissenschaften (ÖAW)",
+        "Bäckerstraße 13, 1010 Wien",
+        "E-Mail: isr@oeaw.ac.at"
+      ]
+    },
+    {
+      "heading": "Adresssuche (Photon)",
+      "body": [
+        "Für die Autovervollständigung werden Ihre Suchbegriffe an den externen Dienst Photon (Komoot/OpenStreetMap) übermittelt. Dabei gelten die Datenschutzbestimmungen des jeweiligen Anbieters.",
+        "Ohne Ihre Einwilligung speichert der Airbnb Monitor diese Suchanfragen nicht auf einem eigenen Server."
+      ]
+    },
+    {
+      "heading": "Freiwillige Protokollierung",
+      "body": [
+        "Wenn Sie im Info-Fenster der freiwilligen Datenspeicherung zustimmen, werden ausgewählte Adressen (Adresstext, Koordinaten, Kartenmodus und Zeitpunkt) in einer Protokolldatei auf dem Server gespeichert.",
+        "Die Speicherung dient ausschließlich der Auswertung der Nutzung der Adresssuche im Rahmen dieses Forschungsprojekts. Sie können die Anwendung auch ohne Zustimmung uneingeschränkt nutzen."
+      ]
+    },
+    {
+      "heading": "Speicherdauer",
+      "body": [
+        "Protokolldaten werden für die Dauer des Forschungsprojekts aufbewahrt und anschließend gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen."
+      ]
+    },
+    {
+      "heading": "Ihre Rechte",
+      "body": [
+        "Sie haben das Recht auf Auskunft, Berichtigung und Löschung Ihrer gespeicherten Daten sowie auf Widerruf Ihrer Einwilligung. Wenden Sie sich dazu an isr@oeaw.ac.at.",
+        "Weitere Informationen: https://www.oeaw.ac.at/oeaw/impressum"
+      ]
+    }
+  ],
+  "closeLabel": "Schließen"
+}

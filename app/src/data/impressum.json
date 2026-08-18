@@ -1,0 +1,39 @@
+{
+  "title": "Impressum",
+  "sections": [
+    {
+      "heading": "Medieninhaber und Herausgeber",
+      "body": [
+        "Institut für Stadt- und Regionalforschung",
+        "Österreichische Akademie der Wissenschaften (ÖAW)",
+        "Bäckerstraße 13",
+        "1010 Wien",
+        "Österreich"
+      ]
+    },
+    {
+      "heading": "Kontakt",
+      "body": [
+        "Telefon: +43 1 51581-3520",
+        "E-Mail: isr@oeaw.ac.at",
+        "Web: https://www.oeaw.ac.at/isr"
+      ]
+    },
+    {
+      "heading": "Rechtlicher Hinweis",
+      "body": [
+        "Diese Anwendung dient der Information über Airbnb-Regulierung und Wirkungsindizes in Österreich. Die bereitgestellten Inhalte wurden mit größtmöglicher Sorgfalt erstellt, erheben jedoch keinen Anspruch auf Vollständigkeit oder Rechtsverbindlichkeit.",
+        "Für externe Inhalte verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich."
+      ]
+    },
+    {
+      "heading": "Datenschutz",
+      "body": [
+        "Bei der Adresssuche werden Suchanfragen an den Dienst Photon (Komoot/OpenStreetMap) übermittelt.",
+        "Optional können Sie der Speicherung ausgewählter Adressen auf dem Server zustimmen. Details finden Sie in der Datenschutzerklärung in dieser Anwendung.",
+        "Weitere Informationen: https://www.oeaw.ac.at/oeaw/impressum"
+      ]
+    }
+  ],
+  "oeawImpressumUrl": "https://www.oeaw.ac.at/oeaw/impressum"
+}

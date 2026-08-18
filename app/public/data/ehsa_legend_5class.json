@@ -1,0 +1,27 @@
+{
+  "persistent_hotspot": {
+    "color": "#67001f",
+    "label": "Anhaltend hohe Airbnb-Dichte",
+    "description": "In diesem Gebiet gibt es dauerhaft viele Kurzzeitvermietungen. Wohnraum und Nachbarschaftsqualität können unter Druck stehen."
+  },
+  "other_hotspot": {
+    "color": "#f4a582",
+    "label": "Erhöhte Airbnb-Aktivität",
+    "description": "In diesem Gebiet ist die Kurzzeitvermietung zeitweise oder wechselnd hoch. Das kann das Wohnungsangebot und das Wohnumfeld beeinflussen."
+  },
+  "no_pattern": {
+    "color": "#dddddd",
+    "label": "Keine auffällige Airbnb-Konzentration",
+    "description": "In diesem Gebiet zeigt sich über die Zeit weder eine klar erhöhte noch eine besonders niedrige Kurzzeitvermietung."
+  },
+  "other_coldspot": {
+    "color": "#92c5de",
+    "label": "Geringere Airbnb-Aktivität",
+    "description": "In diesem Gebiet ist Kurzzeitvermietung zeitweise eher selten. Langfristiges Wohnen überwiegt häufiger."
+  },
+  "persistent_coldspot": {
+    "color": "#053061",
+    "label": "Anhaltend niedrige Airbnb-Dichte",
+    "description": "In diesem Gebiet gibt es dauerhaft wenige Kurzzeitvermietungen. Das spricht eher für eine stabile Wohnnutzung."
+  }
+}
