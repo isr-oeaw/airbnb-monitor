@@ -25,43 +25,45 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173).
 
-## Local development (Docker with HMR)
+## Docker Compose
 
-From the repo root:
+All containerized runs use a single file, [`docker-compose.yml`](docker-compose.yml):
 
-```bash
-docker compose -f docker-compose.dev.yml up
-```
+| Service | Role | Port |
+|---------|------|------|
+| `app` | Production nginx image (built from [`Dockerfile`](Dockerfile)) | 8080 → 80 |
+| `dev` | Vite dev server with HMR (`app/` mounted) | 5173 |
+| `logger` | Address-search log API (`server/search-log.mjs`) | 3001 |
 
-Open [http://localhost:5173](http://localhost:5173). The `app/` folder is mounted into the container; Vite hot-reloads on changes.
+`app` and `dev` both depend on `logger`. Start only the stack you need.
 
-## Production-like local run (Docker)
-
-Build and serve the static production bundle via nginx:
-
-```bash
-docker compose up app --build
-```
-
-Open [http://localhost:8080](http://localhost:8080).
-
-For development with HMR, use the `dev` service instead:
+### Development (HMR)
 
 ```bash
 docker compose up dev
 ```
 
-### Password protection (nginx only)
+Open [http://localhost:5173](http://localhost:5173). The `app/` folder is mounted; Vite hot-reloads on changes. Vite proxies `/api` to `logger`.
 
-The production `app` service supports HTTP Basic Auth via environment variables in [`docker-compose.yml`](docker-compose.yml):
+### Production-like nginx
+
+```bash
+docker compose up app --build
+```
+
+Open [http://localhost:8080](http://localhost:8080). nginx serves the static build and proxies `/api/` to `logger`.
+
+### Password protection (nginx `app` only)
+
+The `app` service supports HTTP Basic Auth via environment variables:
 
 | Variable | Description |
 |----------|-------------|
-| `AUTH_ENABLED` | `true` / `false` (also `1` / `0`) |
+| `AUTH_ENABLED` | `true` / `false` (also `1` / `0`). Default in compose: `false` |
 | `AUTH_PASSWORD` | Required when auth is enabled |
 | `AUTH_USER` | Username (default: `airbnb`) |
 
-Example with protection enabled:
+Enable it in [`docker-compose.yml`](docker-compose.yml):
 
 ```yaml
 environment:
@@ -70,7 +72,7 @@ environment:
   - AUTH_PASSWORD=your-secret
 ```
 
-When enabled, the browser prompts for credentials before serving the SPA, static assets, and `/api/` routes. The Vite `dev` service is not protected.
+When enabled, the browser prompts for credentials before serving the SPA, static assets, and `/api/` routes. The `dev` service is not protected.
 
 ## Build
 
@@ -121,8 +123,7 @@ app/src/lib/              Geocoding and geo utilities
 app/public/data/          Austria Bundesländer GeoJSON, Wien Bezirke, EHSA H3 hexes
 nginx/                    nginx config for production container
 Dockerfile                Multi-stage build (Node → nginx)
-docker-compose.yml        Production-like local run
-docker-compose.dev.yml    Dev server with HMR
+docker-compose.yml        app (nginx), dev (Vite), and logger services
 ```
 
 ## Map data
@@ -143,13 +144,14 @@ Users can optionally consent in the welcome **Info** box to log selected address
 
 When consent is given, each submitted address search is appended to [`data/logs/address-searches.jsonl`](data/logs/address-searches.jsonl) via a small Node API ([`server/search-log.mjs`](server/search-log.mjs)). Editable legal copy lives in [`app/src/data/datenschutz.json`](app/src/data/datenschutz.json) and [`app/src/data/about.json`](app/src/data/about.json).
 
-**Docker dev** (logger + Vite proxy):
+**Docker** — `logger` starts with `dev` or `app`:
 
 ```bash
-docker compose up dev
+docker compose up dev   # Vite on 5173, proxies /api to logger
+docker compose up app   # nginx on 8080, proxies /api/ to logger
 ```
 
-The `logger` service listens on port 3001; Vite proxies `/api` to it.
+The `logger` service listens on port 3001 and writes to [`data/logs/address-searches.jsonl`](data/logs/address-searches.jsonl).
 
 **Local npm dev** — run the logger in a second terminal, then start Vite:
 

@@ -178,7 +178,7 @@ function App() {
       <main className="app-main">
         <div className="map-top-overlay">
           <ViewToggle mode={viewMode} onChange={handleViewModeChange} />
-          <AddressSearch onSubmit={handleAddressSubmit} />
+          <AddressSearch viewMode={viewMode} onSubmit={handleAddressSubmit} />
         </div>
         <a
           className="map-logo-badge"

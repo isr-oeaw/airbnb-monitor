@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react';
 import { reverseGeocode, searchAddresses, type GeocodingResult } from '../lib/geocoding';
+import type { ViewMode } from '../types/regulation';
 
 interface AddressSearchProps {
+  viewMode: ViewMode;
   onSubmit: (result: GeocodingResult) => void;
 }
 
@@ -37,7 +39,7 @@ function LocateIcon() {
   );
 }
 
-export default function AddressSearch({ onSubmit }: AddressSearchProps) {
+export default function AddressSearch({ viewMode, onSubmit }: AddressSearchProps) {
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState<GeocodingResult[]>([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -195,7 +197,11 @@ export default function AddressSearch({ onSubmit }: AddressSearchProps) {
         <input
           type="text"
           className="address-search__input"
-          placeholder="Adresse in Österreich eingeben…"
+          placeholder={
+            viewMode === 'impact'
+              ? 'Adresse in Wien eingeben…'
+              : 'Adresse in Österreich eingeben…'
+          }
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => suggestions.length > 0 && setIsOpen(true)}
