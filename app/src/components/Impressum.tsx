@@ -45,16 +45,6 @@ export default function Impressum({ onClose }: ImpressumProps) {
             ))}
           </section>
         ))}
-
-        <footer className="impressum__footer">
-          <a
-            href={impressumContent.oeawImpressumUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Impressum der ÖAW
-          </a>
-        </footer>
       </aside>
     </div>
   );

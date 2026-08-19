@@ -45,12 +45,6 @@ export default function Methodology({ onClose }: MethodologyProps) {
             ))}
           </section>
         ))}
-
-        <footer className="about-modal__footer">
-          <button type="button" className="about-modal__cta" onClick={onClose}>
-            {methodologyContent.closeLabel}
-          </button>
-        </footer>
       </aside>
     </div>
   );

@@ -45,12 +45,6 @@ export default function Datenschutz({ onClose }: DatenschutzProps) {
             ))}
           </section>
         ))}
-
-        <footer className="about-modal__footer">
-          <button type="button" className="about-modal__cta" onClick={onClose}>
-            {datenschutzContent.closeLabel}
-          </button>
-        </footer>
       </aside>
     </div>
   );

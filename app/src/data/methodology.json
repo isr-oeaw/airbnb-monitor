@@ -52,10 +52,8 @@
       "body": [
         "Die EHSA-Klassifikation ist ein statistisches räumlich-zeitliches Muster, kein direkt gemessener Wohnqualitätsindex.",
         "Listing-Schnappschüsse erfassen nur auf der Plattform sichtbare Angebote; nicht gelistete oder andere Formen der Kurzzeitvermietung fehlen.",
-        "Felder wie „professionelle Listings“ oder „Hotels“ folgen den Definitionen im zugrunde liegenden Datensatz und können sich von anderen Statistiken unterscheiden.",
-        "Texte dieser Methodik können ohne Codeänderung in app/src/data/methodology.json bearbeitet werden."
+        "Felder wie „professionelle Listings“ oder „Hotels“ folgen den Definitionen im zugrunde liegenden Datensatz und können sich von anderen Statistiken unterscheiden."
       ]
     }
-  ],
-  "closeLabel": "Schließen"
+  ]
 }
