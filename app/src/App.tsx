@@ -23,8 +23,12 @@ import { logAddressSearch } from './lib/searchLog';
 import type { ImpactSample, PanelState, ViewMode } from './types/regulation';
 
 function App() {
-  const [viewMode, setViewMode] = useState<ViewMode>('regulation');
-  const [panel, setPanel] = useState<PanelState>(null);
+  const [viewMode, setViewMode] = useState<ViewMode>('impact');
+  const [panel, setPanel] = useState<PanelState>({
+    mode: 'bundesland',
+    bundeslandId: WIEN_BUNDESLAND_ID,
+    name: 'Wien',
+  });
   const [addressMarker, setAddressMarker] = useState<GeocodingResult | null>(null);
   const [impactSample, setImpactSample] = useState<ImpactSample | null>(null);
   const [showImpressum, setShowImpressum] = useState(false);
