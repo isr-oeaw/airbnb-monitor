@@ -8,19 +8,31 @@ services:
       - AUTH_USER=airbnb
       - AUTH_PASSWORD=changeme
     depends_on:
-      - logger
+      logger:
+        condition: service_healthy
+    restart: unless-stopped
 
   logger:
-    image: node:22-alpine
-    working_dir: /server
-    command: node search-log.mjs
+    build: ./server
     volumes:
-      - ./server:/server:ro
       - ./data/logs:/data
     environment:
       - LOG_FILE=/data/address-searches.jsonl
     ports:
       - "3001:3001"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3001/health').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 6
+      start_period: 5s
+    restart: unless-stopped
 
   dev:
     image: node:22-alpine
@@ -35,7 +47,8 @@ services:
       - CHOKIDAR_USEPOLLING=true
       - LOG_API_ORIGIN=http://logger:3001
     depends_on:
-      - logger
+      logger:
+        condition: service_healthy
 
 volumes:
   node_modules:

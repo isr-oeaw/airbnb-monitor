@@ -63,6 +63,12 @@ async function appendLogEntry(payload) {
 }
 
 const server = createServer(async (req, res) => {
+  if (req.method === 'GET' && (req.url === '/health' || req.url === '/api/health')) {
+    res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('ok');
+    return;
+  }
+
   if (req.method === 'POST' && req.url === '/api/search-log') {
     try {
       const payload = await readJsonBody(req);
